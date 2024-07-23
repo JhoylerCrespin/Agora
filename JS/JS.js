@@ -25,6 +25,7 @@ document
 
 // Función para obtener el índice del elemento activo
 function getActiveIndex() {
+
   var items = document.querySelectorAll("#carouselExampleFade .carousel-item");
   var activeItem = document.querySelector(
     "#carouselExampleFade .carousel-item.active"
@@ -32,15 +33,39 @@ function getActiveIndex() {
   return Array.from(items).indexOf(activeItem);
 }
 
+const lienzo1 = document.getElementById("lienzo1");
+const circulo1 = document.getElementById("circulo1");
+const lienzo2 = document.getElementById("lienzo2");
+const circulo2 = document.getElementById("circulo2");
+const lienzo3 = document.getElementById("lienzo3");
+const circulo3 = document.getElementById("circulo3");
+const lienzo4 = document.getElementById("lienzo4");
+const circulo4 = document.getElementById("circulo4");
+
 // Mostrar el índice del elemento activo al cargar la página
+
+removerStronk();
+
 console.log("Índice del elemento activo al cargar:", getActiveIndex());
 if (getActiveIndex() === 0) {
   btnAgoraclub.classList.add("active_ago_club");
+
+  circulo1.classList.add("stronk1");
+  lienzo1.classList.add("animate-rotation");
+  circulo1.classList.add("animate-stroke");
+
 }
+
+
+
 // Agregar la clase
 // elemento.classList.add('nueva-clase');
 
 // Mostrar el índice del elemento activo después de cada transición
+
+
+
+
 document
   .getElementById("carouselExampleFade")
   .addEventListener("slid.bs.carousel", function () {
@@ -49,23 +74,37 @@ document
       getActiveIndex()
     );
 
-    removerClases();
-
+    removerClases(); 
+    removerStronk();
+        
     switch (getActiveIndex()) {
+
       case 0:
         btnAgoraclub.classList.add("active_ago_club");
+        circulo1.classList.add("stronk1");
+        lienzo1.classList.add("animate-rotation");
+        circulo1.classList.add("animate-stroke");
 
         break;
       case 1:
         btn_oh_pay.classList.add("active_oh_pay");
+        circulo2.classList.add("stronk2");
+        lienzo2.classList.add("animate-rotation");
+        circulo2.classList.add("animate-stroke");
 
         break;
       case 2:
         btn_ago_ahorramas.classList.add("active_ago_ahorramas");
+        circulo3.classList.add("stronk3");
+        lienzo3.classList.add("animate-rotation");
+        circulo3.classList.add("animate-stroke");
 
         break;
       case 3:
         btn_shop.classList.add("active_shop");
+        circulo4.classList.add("stronk4");
+        lienzo4.classList.add("animate-rotation");
+        circulo4.classList.add("animate-stroke");
 
         break;
 
@@ -73,6 +112,25 @@ document
         break;
     }
   });
+
+function removerStronk() {
+  circulo1.classList.remove("stronk1");
+  circulo2.classList.remove("stronk2");
+  circulo3.classList.remove("stronk3");
+  circulo4.classList.remove("stronk4");
+
+  lienzo1.classList.remove("animate-rotation");
+  circulo1.classList.remove("animate-stroke");
+
+  lienzo2.classList.remove("animate-rotation");
+  circulo2.classList.remove("animate-stroke");
+
+  lienzo3.classList.remove("animate-rotation");
+  circulo3.classList.remove("animate-stroke");
+
+  lienzo4.classList.remove("animate-rotation");
+  circulo4.classList.remove("animate-stroke");
+}
 
 function removerClases() {
   btnAgoraclub.classList.remove("active_ago_club");
@@ -141,7 +199,6 @@ let altura_menu = document.getElementById("alturaMenu");
 
 let altura_menu_px = altura_menu.offsetHeight;
 sidebar.style.height = `calc(100vh - (${altura_menu_px}px))`;
-
 
 abrirmenu.addEventListener("click", () => {
   let lineas = document.querySelectorAll(".menu-activador-linea");

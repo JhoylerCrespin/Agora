@@ -300,6 +300,12 @@
           <br />
         </div>
 
+        <h4>Dos (02) tipos de animaciones</h4>
+        <p>Puede definir la animación sin el giro constante. Quedaría así:</p>
+
+     
+
+
         <div class="row">
 
           <div class="col-lg-2 col-xl-1 d-flex flex-column justify-content-center cont_icon_tiempo p-0">
@@ -309,9 +315,22 @@
 
               <li id="btn_ago_club" class="pt-lg-4 pb-lg-4 " data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                 aria-current="true" aria-label="Slide 1">
-                <div class="ratio ratio-1x1 rounded-5 " style="width: 4rem;">
-                  <img src="IMG/slide/club-icon.svg" class="" alt="">
+
+                <div class="position-relative"  style="width: 4rem; padding: 1px;">
+
+                  <div class="ratio ratio-1x1 rounded-5 z-1 bg_productos_agora m-1">
+                    <img src="IMG/slide/club-icon.svg" class="" alt="">
+                  </div>
+  
+                  <div class="caja position-absolute " style="top: 0; left: 0;">
+
+                    <svg viewBox="0 0 140 140" class="lienzo" id="lienzo1">
+                      <!-- Circunferencia con borde animado -->
+                      <circle class="cir cir--completando stronk1" cx="70" cy="70" r="65" id="circulo1"/>
+                    </svg>
+                  </div>
                 </div>
+
                 <span class="d-none m-lg-2">
                   Club
                 </span>
@@ -319,10 +338,21 @@
 
               <li id="btn_oh_pay" class="pt-lg-4 pb-lg-4" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
                 aria-label="Slide 2">
-                <div class="ratio ratio-1x1 rounded-5 bg" style="width: 4rem;">
-                  <img src="IMG/slide/pay-icon.svg" class="" alt="">
+                <div class="position-relative"  style="width: 4rem; padding: 1px;">
 
+                  <div class="ratio ratio-1x1 rounded-5 z-1 bg_productos_agora m-1">
+                    <img src="IMG/slide/club-icon.svg" class="" alt="">
+                  </div>
+  
+                  <div class="caja position-absolute " style="top: 0; left: 0;">
+
+                    <svg viewBox="0 0 140 140" class="lienzo" id="lienzo2">
+                      <!-- Circunferencia con borde animado -->
+                      <circle class="cir cir--completando stronk2" cx="70" cy="70" r="65" id="circulo2"/>
+                    </svg>
+                  </div>
                 </div>
+
                 <span class="d-none m-lg-2">
                   oh!Pay
 
@@ -330,9 +360,19 @@
               </li>
               <li id="btn_ago_ahorramas" class="pt-lg-4 pb-lg-4" data-bs-target="#carouselExampleFade"
                 data-bs-slide-to="2" aria-label="Slide 3">
-                <div class="ratio ratio-1x1 rounded-5 " style="width: 4rem;">
-                  <img src="IMG/slide/ahorros-icon.svg" class="" alt="">
+                <div class="position-relative"  style="width: 4rem; padding: 1px;">
 
+                  <div class="ratio ratio-1x1 rounded-5 z-1 bg_productos_agora m-1">
+                    <img src="IMG/slide/club-icon.svg" class="" alt="">
+                  </div>
+  
+                  <div class="caja position-absolute " style="top: 0; left: 0;">
+
+                    <svg viewBox="0 0 140 140" class="lienzo" id="lienzo3">
+                      <!-- Circunferencia con borde animado -->
+                      <circle class="cir cir--completando stronk3" cx="70" cy="70" r="65" id="circulo3"/>
+                    </svg>
+                  </div>
                 </div>
                 <span class="d-none m-lg-2">
                   AhorraMas
@@ -340,9 +380,19 @@
               </li>
               <li id="btn_shop" class="pt-lg-4 pb-lg-4" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
                 aria-label="Slide 4">
-                <div class="ratio ratio-1x1 rounded-5 " style="width: 4rem;">
-                  <img src="IMG/slide/shop-icon.svg" class="" alt="">
+                <div class="position-relative"  style="width: 4rem; padding: 1px;">
 
+                  <div class="ratio ratio-1x1 rounded-5 z-1 bg_productos_agora m-1">
+                    <img src="IMG/slide/club-icon.svg" class="" alt="">
+                  </div>
+  
+                  <div class="caja position-absolute " style="top: 0; left: 0;">
+
+                    <svg viewBox="0 0 140 140" class="lienzo" id="lienzo4">
+                      <!-- Circunferencia con borde animado -->
+                      <circle class="cir cir--completando stronk4" cx="70" cy="70" r="65" id="circulo4"/>
+                    </svg>
+                  </div>
                 </div>
                 <span class="d-none m-lg-2">
                   Shop
@@ -377,10 +427,7 @@
                       <img src="IMG/slide/APPStore.svg" alt="">
                       <span>
                         Disponible en AppStore
-
                       </span>
-
-
                     </div>
                     <div class="store">
                       <img src="IMG/slide/GooglePlay.svg" alt="">
@@ -820,16 +867,16 @@
   </main>
 
   <script>
-    
+
     window.addEventListener('scroll', () => {
-            let elemento = document.getElementById('nav');
-            if (window.scrollY > 200) {
-                elemento.classList.add('sombra');
-            } else {
-                elemento.classList.remove('sombra');
-            }
-        });
-    
+      let elemento = document.getElementById('nav');
+      if (window.scrollY > 200) {
+        elemento.classList.add('sombra');
+      } else {
+        elemento.classList.remove('sombra');
+      }
+    });
+
   </script>
   <script src="JS/JS.js"></script>
 
