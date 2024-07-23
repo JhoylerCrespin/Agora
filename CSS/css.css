@@ -944,7 +944,7 @@ hr {
 }
 
 :root {
-  --diametro: 4.5rem;
+  --diametro: 4.4rem;
 }
 
 /* Propiedades comunes del lienzo y la caja */
@@ -979,7 +979,7 @@ hr {
 
 /* Circunferencia con el borde animado */
 .cir--completando {
-  stroke-width: 10;
+  stroke-width: 6;
 
   /* Matriz de guiones */
 
